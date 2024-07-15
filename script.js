@@ -1,4 +1,4 @@
-const choice = ["rock", "paper", "scissors"];
+const choice = ["Rock", "Paper", "Scissors"];
 
 const resultDiv = document.querySelector(".result");
 const playerScore = document.querySelector(".playerScore");
@@ -44,9 +44,9 @@ function playRound(playerSelection){
     if (playerSelection === compSelection) {
         result = "It's a draw!";
     }
-    else if (playerSelection === "rock" && compSelection === "scissors" ||
-        playerSelection === "paper" && compSelection === "rock" ||
-        playerSelection === "scissors" && compSelection === "paper"
+    else if (playerSelection === "Rock" && compSelection === "Scissors" ||
+        playerSelection === "Paper" && compSelection === "Rock" ||
+        playerSelection === "Scissors" && compSelection === "Paper"
     ) {
         result = `${playerSelection} beats ${compSelection}! You win.`
         humanScore++;
