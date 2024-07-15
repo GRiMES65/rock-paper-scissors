@@ -44,9 +44,9 @@ function playRound(playerSelection){
     if (playerSelection === compSelection) {
         result = "It's a draw!";
     }
-    else if (playerSelection === "Rock" && compSelection === "Scissors" ||
-        playerSelection === "Paper" && compSelection === "Rock" ||
-        playerSelection === "Scissors" && compSelection === "Paper"
+    else if (playerSelection === "rock" && compSelection === "Scissors" ||
+        playerSelection === "paper" && compSelection === "Rock" ||
+        playerSelection === "scissors" && compSelection === "Paper"
     ) {
         result = `${playerSelection} beats ${compSelection}! You win.`
         humanScore++;
